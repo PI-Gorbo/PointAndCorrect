@@ -1,0 +1,27 @@
+{
+
+    "manifest_version": 2,
+    "name": "Point And Correct",
+    "version": "1.0",
+  
+    "description": "Adds the ability to check if a selected word is spelt correctly. If not, it provides potenial corrections.",
+    "icons" : {
+        "48" : "icons/spy48.png"
+    },
+
+    "permissions" : [
+        "activeTab"
+    ],
+
+    "background": {
+        "scripts": ["src/addListeners.js"]
+    },
+
+    "browser_action" : {
+        "default_icon" : "icons/spy32.png",
+        "default_title" : "Point and Correct",
+        "default_popup" : "popup/popup.html"
+    }
+  
+  }
+  
