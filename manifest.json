@@ -14,13 +14,22 @@
     ],
 
     "background": {
-        "scripts": ["src/addListeners.js"]
+        "scripts": ["/src/background/addListeners.js"]
     },
 
     "browser_action" : {
         "default_icon" : "icons/spy32.png",
         "default_title" : "Point and Correct",
         "default_popup" : "popup/popup.html"
+    },
+
+    "commands" : {
+        "trigger-correction" : {
+            "suggested_key": {
+                "default" : "Ctrl+Alt+L"
+            },
+            "description" : "Activates the suggestion window when triggered."
+        }
     }
   
   }
