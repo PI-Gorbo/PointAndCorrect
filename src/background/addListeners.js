@@ -2,8 +2,6 @@
 // and, if it is the correct command, triggers the correction code.
 browser.commands.onCommand.addListener(function (command) {
     if (command === "trigger-correction") {
-        console.log("I was triggered by the keyboard shortcut!")
+        browser.tabs.executeScript({file:'src/content/suggestion.js'}).then((result)=>{console.log(result)});
     }
 });
-
-browser.tabs.query({currentWindow: true}, (input) => console.log("TRIGGERED WOOHOO"));
