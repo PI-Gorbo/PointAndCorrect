@@ -30,7 +30,12 @@
             },
             "description" : "Activates the suggestion window when triggered."
         }
-    }
+    },
+
+    "web_accessible_resources": [
+        "/src/content/suggestion.html",
+        "/src/content/suggestion.css"
+    ]
   
   }
   

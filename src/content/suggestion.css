@@ -1,10 +1,26 @@
-html,body{
-    min-width: 50px;
-    background-color: blueviolet;
+body{
+    position: absolute;
+    margin-top: 2px;
 }
 
-.contianer {
-    padding: 30px;
-    font-size: 20px;
-    height: 30px;
+.container {
+    background-color: wheat;
+    border: 4px outset #1C6EA4;
+    border-radius: 2%;
+    font-family: "Verdana", "Helvetica", "Arial";
+}
+
+.main-title {
+    padding: 5px;
+    font-size: medium;
+}
+
+.button-grid {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.button-grid-item {
+    width: auto;
+    margin: 2px;
 }
