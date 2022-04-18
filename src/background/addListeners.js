@@ -2,6 +2,9 @@
 // and, if it is the correct command, triggers the correction code.
 browser.commands.onCommand.addListener(function (command) {
     if (command === "trigger-correction") {
-        browser.tabs.executeScript({file:'src/content/suggestion.js'}).then((result)=>{console.log(result)});
+        // Execute suggestion.js and report success or failure
+        browser.tabs.executeScript({file:'src/content/suggestion.js'})
+            .then((result)=>{console.log("Correction Listener result: ",result)},
+                  (error) =>{console.log("Correction Listener error: ", error)}); 
     }
 });
